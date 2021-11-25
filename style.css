@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#ekko-container {
+  border: 1px solid red;
+  font-family: "Montserrat", sans-serif;
+}
+#ekko-container #blob-1 {
+  position: absolute;
+  right: 0;
+}
+#ekko-container #ekko-header {
+  padding: 20px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#ekko-container #ekko-header #ekko-header-title {
+  font-size: 64px;
+  line-height: 72px;
+}
+#ekko-container #ekko-header #ekko-header-subtitle {
+  font-weight: 500;
+  font-size: 36px;
+}
+#ekko-container #ekko-header #ekko-header-button {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 50px;
+  background: #2ab1f7;
+  padding: 15px 40px;
+  margin-top: 50px;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-animation: invitePulsate 1s infinite;
+          animation: invitePulsate 1s infinite;
+}
+#ekko-container #ekko-commands {
+  padding: 20px;
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 60%;
+  position: relative;
+}
+#ekko-container #ekko-commands #ekko-commands-title {
+  font-size: 40px;
+}
+#ekko-container #ekko-commands #ekko-commands-note {
+  font-size: 20px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+#ekko-container #ekko-commands #ekko-commands-table {
+  margin-top: 20px;
+  border-spacing: 0px;
+  width: 100%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+}
+#ekko-container #ekko-commands #ekko-commands-table tbody tr:not(:nth-child(1)) th, #ekko-container #ekko-commands #ekko-commands-table tbody tr:not(:nth-child(1)) td {
+  border-top-width: 0.5px;
+  border-top-style: solid;
+  border-color: none;
+}
+#ekko-container #ekko-commands #ekko-commands-table tbody tr th:not(:nth-child(1)), #ekko-container #ekko-commands #ekko-commands-table tbody tr td:not(:nth-child(1)) {
+  border-left-width: 0.5px;
+  border-left-style: solid;
+  border-color: none;
+}
+#ekko-container #ekko-commands #ekko-commands-table tbody tr td {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+#ekko-container #ekko-commands #ekko-commands-table tbody tr th, #ekko-container #ekko-commands #ekko-commands-table tbody tr td {
+  padding: 5px 20px;
+  height: 50px;
+  width: 30%;
+  text-align: left;
+}
+#ekko-container #ekko-commands #ekko-commands-table tbody tr th svg, #ekko-container #ekko-commands #ekko-commands-table tbody tr td svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 12px 0;
+  margin-right: 10px;
+}
+#ekko-container #ekko-commands #ekko-commands-table tbody tr th .important, #ekko-container #ekko-commands #ekko-commands-table tbody tr td .important {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+#ekko-container #ekko-commands #ekko-commands-table tbody tr th:nth-child(1), #ekko-container #ekko-commands #ekko-commands-table tbody tr td:nth-child(1) {
+  width: 7%;
+}
+#ekko-container #ekko-commands #ekko-commands-table tbody tr th:nth-child(2), #ekko-container #ekko-commands #ekko-commands-table tbody tr td:nth-child(2) {
+  width: 20%;
+}
+#ekko-container #ekko-commands #ekko-commands-table tbody tr th:nth-child(3), #ekko-container #ekko-commands #ekko-commands-table tbody tr td:nth-child(3) {
+  width: 10%;
+}
+
+[data-theme=light] #ekko-header #ekko-header-subtitle {
+  color: #646464;
+}
+[data-theme=light] #ekko-commands #ekko-commands-note {
+  color: #646464;
+}
+[data-theme=light] #ekko-commands #ekko-commands-table {
+  border-color: #dbdbdb;
+}
+[data-theme=light] #ekko-commands #ekko-commands-table tr#ekko-commands-table-head {
+  background: #f2f3f5;
+  border-color: #dbdbdb;
+}
+[data-theme=light] #ekko-commands #ekko-commands-table tr th, [data-theme=light] #ekko-commands #ekko-commands-table tr td {
+  border-color: #dbdbdb;
+}
+[data-theme=light] #ekko-commands #ekko-commands-table tr:not(:nth-child(1)) th, [data-theme=light] #ekko-commands #ekko-commands-table tr:not(:nth-child(1)) td {
+  border-color: #dbdbdb;
+}
+
+[data-theme=dark] {
+  background: #1d1f21;
+}
+[data-theme=dark] #ekko-header #ekko-header-title {
+  color: #ffffff;
+}
+[data-theme=dark] #ekko-header #ekko-header-subtitle {
+  color: #c4c4c4;
+}
+[data-theme=dark] #ekko-commands #ekko-commands-title {
+  color: #ffffff;
+}
+[data-theme=dark] #ekko-commands #ekko-commands-note {
+  color: #a2a2a2;
+}
+[data-theme=dark] #ekko-commands #ekko-commands-table {
+  border-color: black;
+}
+[data-theme=dark] #ekko-commands #ekko-commands-table tr#ekko-commands-table-head {
+  background: #16181a;
+}
+[data-theme=dark] #ekko-commands #ekko-commands-table tr th, [data-theme=dark] #ekko-commands #ekko-commands-table tr td {
+  color: #ffffff;
+  border-color: black;
+}
+[data-theme=dark] #ekko-commands #ekko-commands-table tr:not(:nth-child(1)) th, [data-theme=dark] #ekko-commands #ekko-commands-table tr:not(:nth-child(1)) td {
+  border-color: black;
+}
+
+@-webkit-keyframes invitePulsate {
+  0% {
+    box-shadow: 0px 0px 12px #00000070;
+  }
+  50% {
+    box-shadow: 0px 0px 20px #008cff8f;
+  }
+  100% {
+    box-shadow: 0px 0px 12px #00000070;
+  }
+}
+
+@keyframes invitePulsate {
+  0% {
+    box-shadow: 0px 0px 12px #00000070;
+  }
+  50% {
+    box-shadow: 0px 0px 20px #008cff8f;
+  }
+  100% {
+    box-shadow: 0px 0px 12px #00000070;
+  }
+}

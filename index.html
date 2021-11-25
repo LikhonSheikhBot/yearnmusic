@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by InBlue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html data-theme="light">
+	<div id="ekko-container">
+		<svg id="blob-1" width="1200px" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"><g transform="translate(500, 100)"><path d="M81.9,-132.8C109.1,-110,135.9,-92.2,168.3,-64.3C200.6,-36.3,238.4,1.7000000000000002,225.7,26.6C213.1,51.6,150,63.4,111.2,81.6C72.5,99.8,58.1,124.3,32,151.2C5.9,178.1,-31.8,207.6,-62.2,202.8C-92.5,197.9,-115.4,158.9,-121.6,122C-127.8,85,-117.4,50.2,-124.6,16.4C-131.9,-17.4,-156.9,-50.3,-154.5,-76.8C-152.1,-103.3,-122.3,-123.6,-92,-144.9C-61.6,-166.2,-30.8,-188.6,-1.6999999999999993,-186C27.4,-183.3,54.8,-155.6,81.9,-132.8Z" fill="#41d1f5" stroke="none" stroke-width="0"></path></g></svg>
+
+		<div id="ekko-header">
+			<h1 id="ekko-header-title">Ekko</h1>
+			<h3 id="ekko-header-subtitle">Not another music bot.</h3>
+			<a id="ekko-header-button" href="https://ekkobot.xyz/invite">Invite</a>
+		</div>
+		<div id="ekko-commands">
+			<h2 id="ekko-commands-title">Commands</h2>
+			<h4 id="ekko-commands-note">The following table includes a list of all available commands to Ekko users, along with some extra information.</h4>
+			<table id="ekko-commands-table">
+				<tbody>
+					<tr id="ekko-commands-table-head">
+						<th>Command</th>
+						<th>Aliases</th>
+						<th>Arguments</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>play</td>
+						<td>p</td>
+						<td>url or title</td>
+						<td>Add an item to the guild queue.</td>
+					</tr>
+					<tr>
+						<td>start</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Start the current guild queue if the bot is not currently paused.</td>
+					</tr>
+					<tr>
+						<td>stop</td>
+						<td>leave</td>
+						<td>N/A</td>
+						<td>Stop all audio playback from Ekko<br><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#da5a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg><span class="important">This will clear the guild queue.</span></td>
+					</tr>
+					<tr>
+						<td>skip</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Skip the song that is currently playing.</td>
+					</tr>
+					<tr>
+						<td>pause</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Pause the audio playback within the guild.</td>
+					</tr>
+					<tr>
+						<td>resume</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Resume the audio playback within the guild.</td>
+					</tr>
+					<tr>
+						<td>move</td>
+						<td>summon, join</td>
+						<td>N/A</td>
+						<td>Move Ekko from one voice channel to your current voice channel.</td>
+					</tr>
+					<tr>
+						<td>queue</td>
+						<td>q, playing, np, nowplaying</td>
+						<td>N/A</td>
+						<td>View all items that are currently in the quild queue.</td>
+					</tr>
+					<tr id="ekko-commands-table-head">
+						<th colSpan="4">Queue control</th>
+					</tr>
+					<tr>
+						<td>remove</td>
+						<td>N/A</td>
+						<td>queue id or all</td>
+						<td>Remove a queue item from the current guild.</td>
+					</tr>
+					<tr>
+						<td>loop</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Toggle looped audio playback within the current guild.</td>
+					</tr>
+					<tr>
+						<td>shuffle</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Toggle the shuffle functionality on the queue within the current guild.</td>
+					</tr>
+					<tr class="subscription">
+						<td>continous</td>
+						<td>autoplay</td>
+						<td>N/A</td>
+						<td>Toggle continuous video playback, automatically queue the first recommended YouTube video.</td>
+					</tr>
+					<tr id="ekko-commands-table-head">
+						<th colSpan="4">Playlist control</th>
+					</tr>
+					<tr>
+						<td>list</td>
+						<td>playlists, library</td>
+						<td>N/A</td>
+						<td>List all the playlists saved to your account.</td>
+					</tr>
+					<tr>
+						<td>view</td>
+						<td>N/A</td>
+						<td>playlist id or name</td>
+						<td>View the contents of a specific playlist.</td>
+					</tr>
+					<tr>
+						<td>save</td>
+						<td>keep, export</td>
+						<td>playlist name</td>
+						<td>Save the current guild queue as a playlist.</td>
+					</tr>
+					<tr>
+						<td>load</td>
+						<td>import</td>
+						<td>playlist id or name</td>
+						<td>View the contents of a specific playlist.</td>
+					</tr>
+					<tr>
+						<td>delete</td>
+						<td>N/A</td>
+						<td>playlist id or name</td>
+						<td>Delete one of your saved playlists.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>	
+</html>
+<!-- partial -->
+  
+</body>
+</html>
